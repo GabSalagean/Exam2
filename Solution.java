@@ -16,9 +16,9 @@ public class Solution
 
         
         if (string1.equals(string2)) {
-            System.out.println("Equal.");
+            System.out.println("Equal");
         } else {
-            System.out.println("Not equal.");
+            System.out.println("Not equal");
         }
     }
 

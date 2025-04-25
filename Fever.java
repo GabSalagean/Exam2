@@ -1,8 +1,11 @@
 import java.util.ArrayList;
-public class Temperature {
+import java.util.Collections;
+import java.util.stream.Collectors;
+
+public class Fever {
     
     public static void main(String[] args) {
-        
+       
         ArrayList<Double> temperatures = new ArrayList<>();
         temperatures.add(36.1);
         temperatures.add(38.9);
@@ -12,24 +15,18 @@ public class Temperature {
 
         analyzeTemperatures(temperatures);
     }
-    
+
     public static void analyzeTemperatures(ArrayList<Double> temperatures) {
-        int feverCount = 0;
-        double maxTemperature = Double.MIN_VALUE;
-        for (Double temp : temperatures) {
-            
-            if (temp >= 37.5) {
-                feverCount++;
-            }
-            
-            if (temp > maxTemperature) {
-                maxTemperature = temp;
-            }
-        }
+       
+        long feverCount = temperatures.stream()
+                                      .filter(temp -> temp >= 37.5)
+                                      .count();
+        
+        double maxTemperature = Collections.max(temperatures);
+        
         System.out.println("Number of fevers: " + feverCount);
         System.out.println("Maximum temperature: " + maxTemperature);
     }
-   
-    }
 
-//i had help with this one
+    //i had help with this one
+}
