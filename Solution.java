@@ -7,27 +7,20 @@
  */
 public class Solution
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    
+    public class StringCompare {
+    public static void main(String[] args) {
+        
+        String string1 = "yay";
+        String string2 = "yay";
 
-    /**
-     * Constructor for objects of class Solution
-     */
-    public Solution()
-    {
-        // initialise instance variables
-        x = 0;
+        
+        if (string1.equals(string2)) {
+            System.out.println("Equal.");
+        } else {
+            System.out.println("Not equal.");
+        }
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+}
 }
