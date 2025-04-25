@@ -8,7 +8,7 @@
 public class Solution
 {
     
-    public class StringCompare {
+      public class StringCompare {
     public static void main(String[] args) {
         
         String string1 = "yay";
