@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.stream.Collectors;
 
-public class Fever {
+public class FeverTemperature {
     
     public static void main(String[] args) {
        
