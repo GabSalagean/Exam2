@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class FeverAnalyzer {
+public class FeverAnalyser {
 
     public static void analyzeTemperatures(ArrayList<Double> temperatures) {
       
